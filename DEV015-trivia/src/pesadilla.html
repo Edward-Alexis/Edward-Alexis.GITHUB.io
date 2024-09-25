@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Matematica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-dificil">
+        <h1 id="h1-dificil">Desafío Matemático</h1>
+        <!-- Preguntas -->
+        <section class="pregunta-dificil">
+            <h3>1 - ∫₀¹ x² dx</h3>
+            <label class="resultado-dificil">
+                <input type="radio" value="1" name="p1"> 9
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="2" name="p1"> 1
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="3" name="p1"> 1/3
+            </label>
+        </section>
+
+        <section class="pregunta-dificil">
+            <h3>2 - e^(iπ) + 1</h3>
+            <label class="resultado-dificil">
+                <input type="radio" value="1" name="p2"> 461
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="2" name="p2"> 0
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="3" name="p2"> 52
+            </label>
+        </section>
+
+        <section class="pregunta-dificil">
+            <h3>3 - Σ(1/n²) desde n=1 hasta ∞</h3>
+            <label class="resultado-dificil">
+                <input type="radio" value="1" name="p3"> π²/1
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="2" name="p3"> π²/6
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="3" name="p3"> π²/8
+            </label>
+        </section>
+
+        <section class="pregunta-dificil">
+            <h3>4 - ∛(-8)</h3>
+            <label class="resultado-dificil">
+                <input type="radio" value="1" name="p4"> -2
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="2" name="p4"> -1
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="3" name="p4"> 1
+            </label>
+        </section>
+
+        <section class="pregunta-dificil">
+            <h3>5 - lim (x→0) (sin(x)/x)</h3>
+            <label class="resultado-dificil">
+                <input type="radio" value="1" name="p5"> 93
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="2" name="p5"> 29
+            </label>
+            <label class="resultado-dificil">
+                <input type="radio" value="3" name="p5"> 1
+            </label>
+        </section>
+
+        <button id="buttonDificil" onclick="corregir_dificil()">CORREGIR</button>
+        <h2 class="resultado">Cantidad de aciertos: <span id="resultado"></span></h2>
+    </div>
+    <div id="Cronometro">
+        <h3 id="Tiempo">Tiempo Restante</h3>
+        <h2 id="cuenta-atras">05:00</h2>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EA international. Todos los derechos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#"></a>https://github.com/Edward-Alexis</li>
+                </ul>
+            </div>
+        </div>
+  </footer>
+    <style>
+      *{
+        color: black;
+       bottom: 20px;
+  
+      }
+      .footer {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      padding: 2px 2px;
+      text-align: center;
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  
+  .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      gap: 20px; 
+  }
+  
+  .footer-links a {
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+      color: #007bff;
+  }
+  
+    </style>
+    <script src="main.js"></script>
+</body>
+
+</html>

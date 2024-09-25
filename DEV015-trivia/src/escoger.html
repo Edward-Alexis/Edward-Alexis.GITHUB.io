@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleccionar Nivel de Dificultad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="escoger-body">
+  <h1 id="h1-escoger"></h1>
+  <div>
+    <button class="escoger-button" onclick="seleccionarNivel('facil')">Fácil</button>
+    <button class="escoger-button" onclick="seleccionarNivel('dificil')">PESADILLA</button>
+  </div>
+
+  <script>
+    const nombre = localStorage.getItem('nombreJugador');
+    const mensaje = `Hola ${nombre} para continuar selecciona un nivel de dificultad`;
+    document.getElementById('h1-escoger').innerHTML = mensaje;
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

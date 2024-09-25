@@ -1,0 +1,196 @@
+/*Aqui van los estilos de welcome*/
+#welcome {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0;
+}
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#buttonWelcome {
+  background-color: green;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Aqui van los estilos de escoger*/
+#escoger-body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#h1-escoger {
+  color: #333;
+}
+
+.escoger-button {
+  background-color: #4CAF50;
+  border: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 15px;
+
+}
+/* Aqui van los estilos del Cronometro*/ 
+
+#Tiempo {
+  text-align: center;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  top: 20px; 
+ }
+
+  #cuenta-atras {
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 50px;
+    position: absolute;  
+    top: 20px;          
+    right: 20px;  
+    display: flex;
+    justify-content: center;
+  } 
+  
+
+
+/*CSS de facil*/
+
+#h1-facil {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.container-facil {
+  text-align: center;
+}
+
+.pregunta-facil {
+  background-color: lightblue;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  width: 40rem;
+}
+
+.resultado-facil {
+  border: solid 1px lightblue;
+  background-color: snow;
+}
+
+#button-facil {
+  background-color: #b3e600;
+  display: inline-block;
+  width: auto;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/*CSS de pesadilla*/
+* {
+  font-family: Arial, sans-serif;
+  background-color: snow;
+}
+
+.container-dificil {
+  background-color: #ffffff;
+  width: 50%;
+  margin: auto ;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#h1-dificil {
+  text-align: center;
+  color: black;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+.pregunta-dificil {
+  background-color: lightblue;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin: 10px;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+
+.resultado-dificil{
+    border: none;
+    padding: 10px;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 0 0 10px 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+#buttonDificil {
+  background-color: #b3e600;
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton-corregir:hover {
+  background-color: green;
+}

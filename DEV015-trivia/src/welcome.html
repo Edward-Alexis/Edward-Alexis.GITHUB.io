@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Matemática 2024</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="h1-facil">Desafío matemático 2024</h1>
+  </header>
+
+  <div class="container-facil">
+    <!-- Pregunta 1 -->
+    <section class="pregunta-facil">
+      <h3>1 - Si una caja de lápices cuesta $6 y necesitas comprar 4 ¿Cuánto dinero has gastado?</h3>
+      <label class="resultado-facil">
+        <input type="radio" value="1" name="p1">$24
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="2" name="p1">$65
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="3" name="p1">$46
+      </label>
+    </section>
+
+    <!-- Pregunta 2 -->
+    <section class="pregunta-facil">
+      <h3>2 - Si un atleta corre 7 kilómetros todos los días ¿Cuántos kilómetros habrá recorrido en 35 días?</h3>
+      <label class="resultado-facil">
+        <input type="radio" value="1" name="p2">755 kilómetros
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="2" name="p2">245 kilómetros
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="3" name="p2">445 kilómetros
+      </label>
+    </section>
+
+    <!-- Pregunta 3 -->
+    <section class="pregunta-facil">
+      <h3>3 - Si una persona come 7 naranjas cada 8 horas ¿Cuántas naranjas habrá comido en una semana?</h3>
+      <label class="resultado-facil">
+        <input type="radio" value="1" name="p3">256 Naranjas
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="2" name="p3">147 Naranjas
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="3" name="p3">465 Naranjas
+      </label>
+    </section>
+
+    <!-- Pregunta 4 -->
+    <section class="pregunta-facil">
+      <h3>4 - Si una caja de chocolates contiene 25 unidades ¿Cuántos chocolates habrá en 17 cajas?</h3>
+      <label class="resultado-facil">
+        <input type="radio" value="1" name="p4">750 chocolates
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="2" name="p4">575 Chocolates
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="3" name="p4">425 Chocolates
+      </label>
+    </section>
+
+    <!-- Pregunta 5 -->
+    <section class="pregunta-facil">
+      <h3>5 - Si una persona toma 11 vasos de agua al día y cada vaso contiene 200 ml de agua ¿Cuántos litros habrá
+        consumido la persona después de 10 días?</h3>
+      <label class="resultado-facil">
+        <input type="radio" value="1" name="p5">22 Litros
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="2" name="p5">14 Litros
+      </label>
+      <label class="resultado-facil">
+        <input type="radio" value="3" name="p5">34 Litros
+      </label>
+    </section>
+
+    <button id="button-facil" onclick="corregir_facil()">CORREGIR</button>
+    <h2>Cantidad de aciertos: <span id="resultado"></span></h2>
+  </div>
+  <div id="Cronometro">
+    <h3 id="Tiempo">Tiempo Restante</h3>
+    <h2 id="cuenta-atras">05:00</h2>
+</div>
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <p>&copy; 2024 EA international. Todos los derechos reservados.</p>
+          <ul class="footer-links">
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Servicio</a></li>
+              <li><a href="#"></a>https://github.com/Edward-Alexis</li>
+          </ul>
+      </div>
+  </div>
+</footer>
+<style>
+*{
+  color: black;
+ bottom: 20px;
+
+}
+.footer {
+background-color: #1e1e1e;
+color: #ffffff;
+padding: 2px 2px;
+text-align: center;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-links {
+list-style: none;
+padding: 0;
+margin: 10px 0 0;
+display: flex;
+gap: 20px; 
+}
+
+.footer-links a {
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-links a:hover {
+color: #007bff;
+}
+
+</style>
+  <script src="main.js"></script>
+</body>
+
+</html>
